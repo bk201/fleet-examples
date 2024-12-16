@@ -1,0 +1,11 @@
+apiVersion: helm.cattle.io/v1
+kind: HelmChartConfig
+metadata:
+  name: harvester-csi-driver
+spec:
+  valuesContent: |-
+    image:
+      harvester:
+        csiDriver:
+          tag: "v0.2.2"
+
